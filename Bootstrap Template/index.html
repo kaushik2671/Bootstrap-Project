@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="gotrip.css">
+<link rel="stylesheet" href="changemenu.css">
+<link rel="stylesheet" href="togglemenu.css">
+<link rel="stylesheet" href="max-width576.css">
+<script>
+  $ (function() {
+    $navbar = $(".navbar");
+    $(window).scroll(function() {
+        $current = $(this).scrollTop();
+        if ($current > 0 ) {
+            $navbar.addClass("changemenu");
+        } else 
+        $navbar.removeClass("changemenu");
+    })
+});
+</script>
+</head>
+<body>
+  <section id="header" class="">
+    <header>
+      <nav class="navbar navbar-light bg- accordion justify-content-start">
+        <div class="logo">
+        <a class="navbar-brand fw-bold text-white px-5 mx-5 px-sm-0 mx-sm-auto" href="#"> <span class="fa-solid fa-signs-post"></span>Gotrip</a></div>
+        <div class="middle-nav">
+          <div class="nav-link">
+        <ul class="navbar navbar1 list-unstyled justify-content-start top-50  ">
+          <li class="mx-4 mt-3">Home</li>
+          <li class="mx-4 mt-3">About</li>
+          <li class="mx-4 mt-3">Explore</li>
+          <li class="mx-4 mt-3">Pages</li>
+          <li class="mx-4 mt-3">Contact</li>
+          <li class="mx-4 mt-3 nav3"> +(21)-234-9999</li>
+          <li class="mx-4 mt-3"><span class="fa-solid fa-magnifying-glass"></span></li>
+          <li class="mx-4 mt-3"><span class="fa-solid fa-moon"></span></li>
+          <li>&nbsp; &nbsp;</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+        <ul>
+        <li class="list-unstyled"><button class="disp-menu"><span class="fa-solid fa-bars"></span></button></li>
+      </ul>
+    </div>
+      </nav>   
+   </header>
+  </section>
+
+<!------------------------------------- bootstrap slider --------------------------------------------->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active img-fluid" id="bgimg1">
+            <img src="" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block d-md-block">
+              <h1 class="display-1 fw-semibold">Welcome <br> To Let's Travel</h1>
+              <p>We hate to begin with bad news, but there's no avoiding it: summer is officially over. However, rather than dwelling on all the negatives (bye bye sunshine, sandals and copious amounts of ice cream), let's all focus on the positives. Autumn is here, and that means loads of exciting things are on the horizon, from nature adventures to city breaks.</p>
+              <button type="button" class=" btn btn-primary p-3 px-4 rounded-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Your Ticket</button>
+            </div>
+          </div>
+          <div class="carousel-item" id="bgimg2">
+            <img src="" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block d-md-block ">
+              <h1 class="display-1 fw-semibold">Welcome <br> To Let's Travel</h1>
+              <p>We hate to begin with bad news, but there's no avoiding it: summer is officially over. However, rather than dwelling on all the negatives (bye bye sunshine, sandals and copious amounts of ice cream), let's all focus on the positives. Autumn is here, and that means loads of exciting things are on the horizon, from nature adventures to city breaks.</p>
+              <button type="button" class=" btn btn-primary p-3 px-4 rounded-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Your Ticket</button>
+            </div>
+          </div>
+          <div class="carousel-item" id="bgimg3">
+            <img src="Images/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block d-md-block">
+              <h1 class="display-1 fw-semibold">Welcome <br> To Let's Travel</h1>
+              <p>We hate to begin with bad news, but there's no avoiding it: summer is officially over. However, rather than dwelling on all the negatives (bye bye sunshine, sandals and copious amounts of ice cream), let's all focus on the positives. Autumn is here, and that means loads of exciting things are on the horizon, from nature adventures to city breaks.</p>
+              <button type="button" class=" btn btn-primary p-3 px-4 rounded-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Your Ticket</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!--------------------------------------- second section --------------------------------------------->
+
+      <section id="content1">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col">
+              <h1>Get The Best Holiday Planned By <br>  Experts!</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Itaque ex animi laboriosam aut sed incidunt consectetur, delectus odio <br></p>
+            </div>
+          </div>
+
+          <form  class="pt-3">
+
+            <!-- frist row -->
+
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="name" class="p-3">Name</label>
+              <input type="text" class="form-control mx-2" placeholder="Name" id=name>
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="destination" class="p-3">Destination</label>
+                <select name="" id="destination" class="form-control mx-2">
+                  <option selected>Maldives</option>
+                  <option value="">Africa</option>
+                  <option value="">Newyork</option>
+                  <option value="">Hongkong</option>
+                  <option value="">Mumbai</option>
+                  <option value="">Lundon</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="activity" class="p-3">Activity</label>
+                <select name="" id="activity" class="form-control mx-2">
+                  <option selected>Any</option>
+                  <option value="">Citytours</option>
+                  <option value="">Coultural Tour</option>
+                  <option value="">Family Friedly Holiday</option>
+                  <option value="">Outdoor Activity</option>
+                  <option value="">Wild & Adventures Tours</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- second Row -->
+
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="duration" class="p-3">Duration</label>
+                <select id="duration" class=" costom-select form-control mx-2">
+                  <option selected>Any</option>
+                  <option value="">1 Day Tour</option>
+                  <option value="">2-3 Day Tour</option>
+                  <option value="">3-7 Day Tour</option>
+                  <option value="">7+ Day Tour</option>
+                </select>
+              </div>
+              <div class="col-lg-4">
+                <label for="date" class="p-3">Date</label>
+                <input type="text" id="date" class="form-control mx-2" placeholder="Enter Date">
+              </div>
+              <div class="col-lg-4">
+                <label for="submit" class="p-3">Submit</label>
+                <br>
+                <button class="btn btn-primary mx-2 p-1 px-5 rounded-2 w-100">Submit</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+<!---------------------------------------- third section --------------------------------------------->
+
+      <section id="content2" class="mt-5 pt-3">
+        <div class="row text-left">
+          <div class="col-lg-6  m-0 p-0">
+            <div class="thidsecimg1 text-left pt-5">
+              <div class="imgsec3con1 pt-5 mt-5 p-4 text-white">
+              <h4 class="pt-5 mt-5 mb-3 fw-bolder">The City Of Light</h4>
+            <p class="">With over 50,000 street lights across the city it's no surprise that Paris is now referred to as the City of Light. <br> In addition, 33 of Paris' 37 major bridges are illuminated each night.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="row m-0 p-0">
+              <div class="col-6 m-0 p-0">
+                <div class="thidsecimg2">
+                  <div class="imgsec3con2">
+                  <h4>French-Polenesia</h4>
+              <p>French Polynesia, an overseas collectivity of France, comprises more than 100 islands in the South Pacific</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 m-0 p-0">
+                <div class="thidsecimg3">
+                  <div class="imgsec3con2">
+                  <h4>Buckingham Palace</h4>
+                <p>Buckingham Palace is a London royal residence and the administrative headquarters of the monarch of the United Kingdom.</p>
+              </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0 p-0">
+              <div class="col-6 m-0 p-0">
+                <div class="thidsecimg4">
+                  <div class="imgsec3con2">
+                  <h4>Australia Nature</h4>
+                  <p>Australia's landscapes are incredibly diverse. They include a wide variety of habitats for its wildlife, including tropical rainforests for you to explore.</p>
+                </div>
+                </div>
+              </div>
+              <div class="col-6 m-0 p-0">
+                <div class="thidsecimg5">
+                  <div class="imgsec3con2">
+                  <h4>Turkey Nature</h4>
+                  <p>Central Turkey has an arid climate, home once to Mevlana and the nomadic peoples of the central plateau.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!---------------------------------------- fourth section ------------------------------------------->
+
+      <section id="content3" class="align-items-center bg-light" >
+        <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="col">
+              <h1>Top Travelling Destinations</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga sit illo modi <br> aut aspernatur tempore laboriosam saepe dolores eveniet.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container pb-5">
+          <div class="card-group">
+          <div class="row">
+            <div class="col-lg-4 col-sm-1">
+            <div class="card p-4 text-bg-secondary rounded border-light mx-3">
+              <img src="Images/South Island.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-title"><h5>South islands</h5></div>
+                <div class="card-text">
+                  <div class="card-link">
+                  <p>7 Days  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Max Peoples:5</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Eveniet itaque labor.</p></div>
+                  <div class="card-footer">
+                    <small > From $525</small>
+                  </div>
+              </div>
+            </div>
+            </div>
+          
+
+            <!-- second card -->
+            <div class="col-lg-4 col-sm-1">
+            <div class="card p-4 text-bg-secondary rounded border-light mx-3">
+              <img src="Images/New Zeland.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-title"><h5>New Zeland</h5></div>
+                <div class="card-text">
+                  <div class="card-link">
+                    <p>7 Days &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Max Peoples:5</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Eveniet itaque labor.</p></div>
+                  <div class="card-footer">
+                    <small> From $700</small>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- third card -->
+            <div class="col-lg-4 col-sm-1">
+            <div class="card p-4 text-bg-secondary rounded border-light mx-3">
+              <img src="Images/bora.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-title"><h5>Bora Bora</h5></div>
+                <div class="card-text">
+                  <div class="card-link">
+                  <p>7 Days &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Max Peoples:5</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Eveniet itaque labor.</p></div>
+                  <div class="card-footer">
+                    <small> From $600</small>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </section>
+      
+<!--------------------------------------- fifth section --------------------------------------------->
+
+      <section id="content4">
+        <div class="outer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="Images/vpackage.jpg" class="w-100 rounded-4" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="textcpn4">
+                  <h5 class="text-secondary pt-2">Explore</h5>
+                  <h1 class="pt-4">Exclusive Vacation Packages And Travel Services For You.</h1>
+                  <p class="pt-3 pb-2">Australia's landscapes are incredibly diverse. They include a wide variety of habitats for its wildlife, including tropical rainforests, deserts, rivers, mountain ranges and marine environments for you to explore.</p>
+                  <button class="btn btn-primary p-3 px-5">Read More</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+-
+      <!-- -----------------------------------Modal--------------------------------------------------->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Book Yur Tickets/Holidays</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+
+        <form  class="pt-3">
+
+          <!-- frist row -->
+
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="name" class="p-3">Name</label>
+            <input type="text" class="form-control mx-2" placeholder="Name" id=name>
+            </div>
+            <div class="form-group col-lg-6">
+              <label for="destination" class="p-3">Destination</label>
+              <select name="" id="destination" class="form-control mx-2">
+                <option selected>Maldives</option>
+                <option value="">Africa</option>
+                <option value="">Newyork</option>
+                <option value="">Hongkong</option>
+                <option value="">Mumbai</option>
+                <option value="">Lundon</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6">
+              <label for="activity" class="p-3">Activity</label>
+              <select name="" id="activity" class="form-control mx-2">
+                <option selected>Any</option>
+                <option value="">Citytours</option>
+                <option value="">Coultural Tour</option>
+                <option value="">Family Friedly Holiday</option>
+                <option value="">Outdoor Activity</option>
+                <option value="">Wild & Adventures Tours</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- second Row -->
+
+          <div class="row">
+            <div class="form-group col-lg-6 ">
+              <label for="duration" class="p-3">Duration</label>
+              <select id="duration" class=" costom-select form-control mx-2">
+                <option selected>Any</option>
+                <option value="">1 Day Tour</option>
+                <option value="">2-3 Day Tour</option>
+                <option value="">3-7 Day Tour</option>
+                <option value="">7+ Day Tour</option>
+              </select>
+            </div>
+            <div class="col-lg-6">
+              <label for="date" class="p-3">Date</label>
+              <input type="text" id="date" class="form-control mx-2" placeholder="Enter Date">
+            </div>
+            <div class="col-lg-6">
+              <label for="submit" class="p-3">Submit</label>
+              <br>
+              <button class="btn btn-primary mx-2 p-1 px-5 rounded-2 w-100">Submit</button>
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------------------- sixth section --------------------------------------------->
+
+      <section id="content5">
+        <div class="content5bgimg">
+          <div class="container text-white text-center pt-5">
+            <div class="pb-5"></div>
+            <div class="pb-4"></div>
+            <h1 class="fw-bolder display-5 pt-5">We Are With You At Every <br>
+              Stage Of Your Journey</h1>
+            <p class="pt-3 pb-3">Fugit tempora dolor dolore recusandae aut at cum autem esse neque. <br> Consequuntur dolor sequi nulla corrupti blanditiis similique</p>
+            <button  type="button" class="btn btn-primary p-3 px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Boook Your Travel</button>
+          </div>
+        </div>
+      </section>
+
+<!--------------------------------------- seventh section -------------------------------------------->
+
+      <footer id="content6" class="bg-dark">
+
+      <div class="container pt-5">
+        <div class="row pb-3">
+          <div class="col-lg-4 col-sm-auto footer1">
+            <h5 class="w-50">Contact Us</h5>
+            <div class="icons">
+            <span class="fa-solid fa-location"></span>
+            <span class="fa-solid fa-mobile-android" style="margin-top: 43px;"></span>
+            <span class="fa-solid fa-envelope-open" style="margin-top: 18px;"></span>
+            </div>
+            <div class="contactus">
+            <p>California, #32841 block, #221DRS 75 West Rock, Maple Building, UK.</p>
+            <p>+(21)-255-999-8888</p>
+            <p>Exterior-mail@support.com</p>
+
+            <div class="icons2">
+              <ul class="pt-3">
+                <li class="fa-solid fa-brands fa-facebook px-2"></li>
+                <li class="fa-solid fa-brands fa-twitter px-2"></li>
+                <li class="fa-solid fa-brands fa-instagram px-2"></li>
+                <li class="fa-solid fa-brands fa-google-plus px-2"></li>
+                <li class="fa-solid fa-brands fa-linkedin px-2"></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-auto">
+            <h5>Categorey</h5>
+            <ul class="list-unstyled pt-3">
+              <li class="pb-2">Event Travel</li>
+              <li class="pb-2">Holiday Trip</li>
+              <li class="pb-2">Group Tour</li>
+              <li class="pb-2">Package Holiday</li>
+              <li class="pb-2">Gap Year</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-auto">
+            <h5>Lattest Gallerey</h5>
+            <div class="lattestimg pt-3">
+            <img src="Images/blog1.jpg" alt="">
+            <img src="Images/blog2.jpg" alt="">
+            <img src="Images/blog3.jpg" alt="">
+            <img src="Images/blog4.jpg" alt="">
+            <img src="Images/blog5.jpg" alt="">
+            <img src="Images/blog6.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-auto">
+            <h5>Travel & Tips</h5>
+            <ul class="pt-3 list-unstyled">
+              <li class="pb-2">Bahamas</li>
+              <li class="pb-2">Cambodiya</li>
+              <li class="pb-2">Mumbai</li>
+              <li class="pb-2">Egypt</li>
+              <li class="pb-2">Lundon</li>
+            </ul>
+          </div>
+        </div>
+        <p class="pt-4 text-center">© 2022 Go Trip. All rights reserved | Designed by Kaushik</p>
+      </div>
+
+      </footer>
+
+      <script>
+        let disp_menu = document.querySelector(".disp-menu");
+        let nav_bar = document.querySelector(".nav-link")
+
+      
+        disp_menu.addEventListener("click" , function() {
+        nav_bar.classList.toggle("list-menu");
+    });
+      </script>
+</body>
+</html>
